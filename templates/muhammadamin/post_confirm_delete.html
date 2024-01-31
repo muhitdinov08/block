@@ -1,0 +1,14 @@
+{% extends "muhammadamin/base.html" %}
+{% block title %} Delete Page {% endblock %}
+{% block body %}
+    <body>
+    <br>
+    <br>
+    <br>
+    <a href="{% url 'muhammadamin:post_delete_page' %}" methods="POST">Yes, Delete </a> 
+    <br>
+    <br>
+    <a href="{% url 'muhammadamin:profile_page' %}">Cancel</a>
+</body>
+{% endblock %}
+

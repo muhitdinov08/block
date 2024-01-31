@@ -1,3 +1,13 @@
 from django.contrib import admin
 
-# Register your models here.
+from muhammadamin.models import About, Post
+
+
+@admin.register(About)
+class AboutAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Post)
+class PostAdmin(admin.ModelAdmin):
+    pass

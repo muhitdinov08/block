@@ -1,0 +1,10 @@
+{% extends "muhammadamin/base.html" %}
+{% block title %} About Page {% endblock %}
+{% block body %}
+    <h1>About Page</h1>
+    {% for about in abouts %}
+        <h5>{{ about.title }}</h5>
+        {{ about.description }}
+    
+    {% endfor %}
+{% endblock %}
